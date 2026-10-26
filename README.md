@@ -25,3 +25,14 @@ Voir [produit](docs/PRODUCT.md), [méthodologie](docs/EXPERIMENTS.md), [roadmap]
 
 ## Application web installable, socle hors ligne
 Le shell `web/` dispose d'un manifeste et d'un service worker à liste blanche (`sw.js`) afin de pouvoir être relancé hors réseau après un **premier chargement réussi depuis une origine sécurisée (HTTPS ou localhost)**. Les dessins et JSON **ne sont pas persistés automatiquement** entre les sessions; les exporter manuellement. Les vrais modèles Live2D, l'audio distant, les versions cloud et les assets libres/licenciés restent à implémenter. Le mode de test `http://localhost:8000/web/` peut fonctionner hors connexion une fois le cache correctement installé et vérifié sur navigateur compatible; la validation mobile réelle n'a pas été faite.
+
+## Lancer la première démo sur PC Windows
+1. Télécharger la branche [feat/replay-clothing-spike](https://github.com/goldaj/vtube-physics-lab/tree/feat/replay-clothing-spike) en ZIP, la décompresser.
+2. Dans l'Explorateur Windows, entrer `powershell` dans la barre d'adresse du **dossier racine** (touche `Alt+D`).
+3. Lancer `python -m http.server 8000`, puis ouvrir **http://localhost:8000/web/**. Python sert seulement les fichiers locaux, sans installation npm nécessaire pour la démo. Le navigateur ne demande pas de caméra.
+4. Changer les modes (AI Replay / Auto Demo / Physics Lab / VTS Simulator **simulé**), ajuster le ressort, dessiner sur le t-shirt, importer un PNG autorisé et exporter le rejeu JSON.
+5. Pour tests automatisés facultatifs, Node 22+ : `npm run check && npm test`.
+
+Pour tester le cache PWA offline, le premier chargement doit réussir sous HTTPS ou `localhost`; fermer/réouvrir le navigateur en coupant le réseau. Le dessin de l'utilisateur n'est **pas** sauvegardé automatiquement; l'exporter avant de fermer.
+
+**Ne pas utiliser `file://` pour cette démo** : les modules ES et le service worker nécessitent une origine HTTP(S) adaptée. Aucune vraie fonctionnalité Live2D/VTS n'est annoncée comme prête.

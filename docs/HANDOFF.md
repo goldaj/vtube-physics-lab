@@ -28,3 +28,9 @@ Branches `feat/*`, PR brouillon vers develop, tests continus; Codex peut reprend
 ## Shell mobile PWA (essai code)
 - `sw.js` intercepte uniquement des ressources statiques **allowlistées**, aucun asset personnel, et met en cache les modules du laboratoire. `manifest.webmanifest` décrit l'app autonome.
 - Enregistrer le service worker sous HTTPS ou localhost. **Aucun test sur vrai téléphone ou lancement offline exécuté** pendant cette session; la présence du code PWA ne suffit pas à démontrer cette fonction. Ne pas promettre sauvegarde automatique des modèles ni sync cloud.
+
+## Exécution rapide
+- Windows : depuis la racine du ZIP de la PR, `python -m http.server 8000`, puis `http://localhost:8000/web/`.
+- Tests Node 22 : `npm run check && npm test`.
+- PR en brouillon avec README et démonstrateur; issues QA #2, vêtements #3, intégration Cubism/VTS #4, mobile/audio #5.
+- `sw.js` contrôlé syntaxiquement dans le script check; fonctionnement réel du cache offline **à tester**.

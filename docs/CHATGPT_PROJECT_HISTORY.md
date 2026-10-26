@@ -23,3 +23,6 @@
 **Préservation historique :** copie intégrale de la fiche enrichie `live2d-remote-lab.md` dans `docs/LEGACY_LIVE2D_REMOTE_LAB.md`, notamment audio distant et connexion hors Wi-Fi.
 
 **Assistant (résumé de la même session, non verbatim)** : ajoute un cache PWA limité au shell et manifeste pour préparer le laboratoire sans réseau après chargement; ne revendique pas de test offline smartphone ni de persistance de données utilisateur.
+
+## 2026-10-26 — Fin de session et coordination Codex
+**Assistant (résumé non verbatim)** : consolide le dépôt sous une PR en brouillon, conserve le contexte de l'idée Remote Lab enrichie, ajoute service worker et manifeste, crée des issues de QA / recherche vêtements / Cubism-VTS / mobilité-audio. L'incubateur [PR #4](https://github.com/goldaj/projects-incubator/pull/4) a été fusionnée ; la fiche VTube Physics côté Jeux était déjà absente sur main. Un point d'entrée `docs/CODEX_ACTIVE_WORK.md` a été ajouté sur develop. Aucun test visuel navigateur ni compatibilité réelle Live2D n'ont été revendiqués.
