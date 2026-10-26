@@ -22,3 +22,6 @@ Dessiner/importer un vêtement en 2D (image avec transparence), le poser sur un 
 - Les API VTube Studio nécessitent consentement/permissions. L'app sera utilisable en mode laboratoire autonome sans VTS.
 
 Voir [produit](docs/PRODUCT.md), [méthodologie](docs/EXPERIMENTS.md), [roadmap](docs/TASKS.md), [architecture](docs/ARCHITECTURE.md), [passation Codex](docs/HANDOFF.md), [historique](docs/CHATGPT_PROJECT_HISTORY.md).
+
+## Application web installable, socle hors ligne
+Le shell `web/` dispose d'un manifeste et d'un service worker à liste blanche (`sw.js`) afin de pouvoir être relancé hors réseau après un **premier chargement réussi depuis une origine sécurisée (HTTPS ou localhost)**. Les dessins et JSON **ne sont pas persistés automatiquement** entre les sessions; les exporter manuellement. Les vrais modèles Live2D, l'audio distant, les versions cloud et les assets libres/licenciés restent à implémenter. Le mode de test `http://localhost:8000/web/` peut fonctionner hors connexion une fois le cache correctement installé et vérifié sur navigateur compatible; la validation mobile réelle n'a pas été faite.

@@ -8,7 +8,8 @@
 | P3 | Garment benchmark: image 2D et déformation sans rig vestimentaire manuel | À coder comme expérience, **sans promettre Cubism** |
 | P4 | Rendu réellement connecté à Cubism SDK Web avec assets autorisés | Étude d'intégration |
 | P5 | Mode VTS Simulator (protocole, consentement, noms paramètres) | Étude d'intégration |
-| P6 | Mode cloud/publish/versioning, PWA offline mobile, synchronisation audio distant | Étude; besoin conservé dans LEGACY_LIVE2D_REMOTE_LAB.md |
+| P6 | Cache PWA du shell de laboratoire | Code ajouté, **non validé sur téléphone ni hors réseau** ; données utilisateur non persistées |
+| P6b | Cloud/versioning et audio distant entre PC et téléphone | Étude; besoin conservé dans LEGACY_LIVE2D_REMOTE_LAB.md |
 | P7 | AI Replay en provenance d'un agent IA concret | Étude |
 | P8 | Auto Clothing sur vrai modèle/PSD + métriques | R&D majeure, conditionnée par P3/P4 |
 

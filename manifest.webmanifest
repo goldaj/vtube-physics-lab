@@ -1,0 +1,19 @@
+{
+  "name": "VTube Physics Lab",
+  "short_name": "VTube Lab",
+  "id": "./web/",
+  "start_url": "./web/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0e141c",
+  "theme_color": "#1b2733",
+  "description": "AI Replay, simulation physique et vêtements 2D expérimentaux, sans caméra.",
+  "icons": [
+    {
+      "src": "app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

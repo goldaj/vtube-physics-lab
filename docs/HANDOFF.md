@@ -24,3 +24,7 @@ Branches `feat/*`, PR brouillon vers develop, tests continus; Codex peut reprend
 - Aucun test navigateur manuel, smartphone, ni vrai modèle Live2D ou VTS exécuté à cette date. La géométrie d'un vêtement PNG reste un benchmark sur corps synthétique.
 - L'idée Live2D Remote Lab décrivait aussi **audio distant** et **connexion hors réseau local**; contexte complet transféré dans `docs/LEGACY_LIVE2D_REMOTE_LAB.md`, sans affirmer que ces fonctions sont déjà codées.
 - Ne pas oublier `docs/AUTO_CLOTHING.md` : le transfert de déformation vers vraie peau / ArtMeshes reste un problème non résolu. Voir aussi PSD2Live et ses capacités déjà proches de l'auto-rig.
+
+## Shell mobile PWA (essai code)
+- `sw.js` intercepte uniquement des ressources statiques **allowlistées**, aucun asset personnel, et met en cache les modules du laboratoire. `manifest.webmanifest` décrit l'app autonome.
+- Enregistrer le service worker sous HTTPS ou localhost. **Aucun test sur vrai téléphone ou lancement offline exécuté** pendant cette session; la présence du code PWA ne suffit pas à démontrer cette fonction. Ne pas promettre sauvegarde automatique des modèles ni sync cloud.

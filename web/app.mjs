@@ -195,3 +195,10 @@ function drawFrame(ts){
   requestAnimationFrame(drawFrame);
 }
 requestAnimationFrame(drawFrame);
+
+/** Cache only public application code, never user-imported models or garments. */
+if("serviceWorker" in navigator && (location.protocol==="https:" || location.hostname==="localhost" || location.hostname==="127.0.0.1")){
+  navigator.serviceWorker.register("../sw.js").catch(()=>{
+    // The app still runs online without the optional offline shell cache.
+  });
+}

@@ -21,3 +21,5 @@
 **Preuve :** Node checks et huit tests réussis au workflow [40372532646](https://github.com/goldaj/vtube-physics-lab/actions/runs/40372532646). **Échec précédent 40372132724** dû à la référence prématurée au fichier `web/app.mjs` avant son ajout, corrigé par la tranche suivante.
 **Limites :** pas d'essai sur vrai Live2D/SDK, pas de synchronisation distante/mobile autonome encore démontrée.
 **Préservation historique :** copie intégrale de la fiche enrichie `live2d-remote-lab.md` dans `docs/LEGACY_LIVE2D_REMOTE_LAB.md`, notamment audio distant et connexion hors Wi-Fi.
+
+**Assistant (résumé de la même session, non verbatim)** : ajoute un cache PWA limité au shell et manifeste pour préparer le laboratoire sans réseau après chargement; ne revendique pas de test offline smartphone ni de persistance de données utilisateur.
