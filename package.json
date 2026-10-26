@@ -1,0 +1,13 @@
+{
+  "name": "vtube-physics-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/replay.mjs && node --check src/physics.mjs && node --check src/garment.mjs && node --check web/app.mjs"
+  }
+}
