@@ -1,0 +1,85 @@
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>VTube Physics Lab | Replay et vêtements expérimentaux</title>
+<link rel="stylesheet" href="./style.css">
+<script type="module" src="./app.mjs"></script>
+</head><body>
+<main>
+<header>
+  <p class="eyebrow">VTube Physics Lab · Prototype de recherche</p>
+  <h1>AI Replay + physique de vêtements 2D</h1>
+  <p>Rejoue des paramètres, change de vêtement ou dessine un motif sur une texture.
+  Le vêtement est ajusté automatiquement à un <strong>corps 2D synthétique</strong>, sans caméra ni rig manuel de la tenue.
+  Ce n'est <strong>pas encore un vrai modèle Cubism ou VTube Studio</strong>.</p>
+</header>
+<section class="layout">
+  <div class="viewport panel">
+    <div class="stage-heading"><strong>Aperçu du modèle fictif</strong><span id="pose-label">ParamAngleX 0°</span></div>
+    <canvas id="stage" width="640" height="640" aria-label="Corps fictif et vêtement 2D déformé" role="img"></canvas>
+    <p id="status" role="status" aria-live="polite">Harnais autonome prêt. Aucun fichier n'est envoyé sur Internet.</p>
+  </div>
+  <div class="tools">
+    <section class="panel">
+      <h2>1. Modes d'animation</h2>
+      <label>Mode
+        <select id="mode">
+          <option value="replay">AI Replay : fichier de paramètres</option>
+          <option value="auto">Auto Demo : mouvement autonome</option>
+          <option value="manual">Physics Lab : contrôle manuel</option>
+          <option value="vts">VTS Simulator : paramètres simulés</option>
+        </select>
+      </label>
+      <div class="buttons">
+        <button id="play">Pause</button>
+        <button id="restart">Repartir à zéro</button>
+      </div>
+      <label>Position dans le rejeu <output id="time-value">0,0 s</output>
+        <input id="time" type="range" min="0" max="8000" step="10" value="0">
+      </label>
+      <label>Inclinaison (paramètre de démonstration) <output id="angle-value">0°</output>
+        <input id="angle" type="range" min="-30" max="30" step="1" value="0">
+      </label>
+      <label>Respiration <output id="breath-value">50 %</output>
+        <input id="breath" type="range" min="0" max="100" value="50">
+      </label>
+      <div class="buttons">
+        <button id="save-replay">Exporter replay JSON</button>
+        <label class="file">Importer replay JSON <input id="load-replay" type="file" accept=".json,application/json"></label>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>2. Physique du tissu</h2>
+      <label>Fréquence du ressort <output id="freq-value">2,4 Hz</output>
+        <input id="frequency" type="range" min="0.4" max="6" step="0.2" value="2.4">
+      </label>
+      <label>Amortissement <output id="damping-value">0,74</output>
+        <input id="damping" type="range" min="0" max="2" step="0.05" value="0.75">
+      </label>
+    </section>
+    <section class="panel">
+      <h2>3. Dessiner ou importer une tenue</h2>
+      <label>Tenue interchangeable
+        <select id="outfit">
+          <option value="blue">T-shirt bleu de démonstration</option>
+          <option value="red">Veste rouge de démonstration</option>
+        </select>
+      </label>
+      <div class="drawing">
+        <canvas id="fabric" width="256" height="256" aria-label="Surface de dessin du vêtement"></canvas>
+        <div class="drawing-tools">
+          <label>Couleur <input id="ink" type="color" value="#ffe4a6"></label>
+          <label>Largeur du pinceau
+            <input id="brush" type="range" min="2" max="30" value="7">
+          </label>
+          <button id="clear">Redessiner la tenue de base</button>
+          <label class="file">Importer PNG autorisé <input id="garment-file" type="file" accept="image/png,image/webp"></label>
+          <button id="export-garment">Exporter dessin PNG</button>
+        </div>
+      </div>
+      <p class="note">L'import et le dessin ne sont pas une segmentation intelligente du vêtement. Ce prototype teste le transfert géométrique et l'inertie sur un corps standard uniquement.</p>
+    </section>
+  </div>
+</section>
+<footer>Sans compte, caméra, serveur IA ni connexion VTube Studio. La lecture mobile autonome et l'intégration réelle Cubism nécessiteront des étapes supplémentaires. Documentation du projet dans <a href="https://github.com/goldaj/vtube-physics-lab">GitHub</a>.</footer>
+</main></body></html>
