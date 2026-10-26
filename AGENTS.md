@@ -17,5 +17,8 @@ Laboratoire de paramètres Live2D local + mobile, sans caméra, avec **AI Replay
 ## Sécurité
 Interdiction d'ajouter secrets, informations de comptes, modèles/assets privés, données de production. Les paramètres de rejeu IA éventuellement sensibles doivent rester locaux, sans téléversement implicite.
 
-## Point d'entrée de la reprise
-Lire `docs/CODEX_ACTIVE_WORK.md` pour les branches, issues et limites vérifiées.
+## État courant / lien Codex
+Lire d'abord [docs/CODEX_ACTIVE_WORK.md](docs/CODEX_ACTIVE_WORK.md). Les fonctionnalités et tests sont sur une PR en brouillon distincte, non sur develop.
+
+## Point d'entrée Codex sur la branche de réalisation
+Lire [docs/CODEX_ACTIVE_WORK.md](docs/CODEX_ACTIVE_WORK.md) pour retrouver la PR active et les tests. Les changements de code de cette branche sont expérimentaux et **non fusionnés** sur develop.
