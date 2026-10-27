@@ -1,3 +1,7 @@
+## Extension expérimentale, 27/10/2026, PR #6 non fusionnée
+
+**P3-Q, instrumentation de recherche pour Codex** : ajout sur branche séparée du diagnostic de maillage (triangles inversés/écrasés, ratios d'aire et d'arêtes, glissement d'ancrage), séquences horodatées et rapport synthétique AI Replay. Voir `docs/GARMENT_QUALITY_BENCHMARK.md`. **Code et tests proposés, validation navigateur/Cubism et calibrage des seuils à faire.** La priorité reste un vrai test P3/P4 avec asset autorisé, et non le nombre de tests unitaires. Les tâches historiques ci-dessous décrivent le plan de la PR #1 lors de sa création, pas un état de livraison fusionné sur develop.
+
 # Roadmap — 2026-10-26
 
 | ID | Livrable | État |
