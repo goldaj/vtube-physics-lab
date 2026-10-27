@@ -1,3 +1,12 @@
+## Avis à Codex : nouvelle cible auto-clothing sans limite de familles (27/10/2026)
+
+**PR #7 (brouillon, documentaire)** : https://github.com/goldaj/vtube-physics-lab/pull/7
+Branche autonome research/gpt6-universal-auto-clothing-plan-20261027, fondée sur feat/replay-clothing-spike, **PR sœur de PR #6**. La nouvelle demande est l'habillage 2D automatique de modèles humanoïdes animés de différentes corpulences, à terme pour **tout vêtement représentable**, sans rig manuel par tenue et avec fonctionnement réel sur VTube Studio. Les six exemples cités ne sont **pas** une taxonomie fermée.
+
+Lire EN PREMIER : docs/auto-clothing/00-PRODUCT-CONTRACT.md → 01-BACKLOG-E0-E6.md → 02-BACKLOG-E7-E13.md → 03-EXPERIMENT-DESIGN.md → 04-CODEX-HANDOFF.md ; puis les consignes préexistantes ci-dessous. Ce nouveau programme comprend 14 étapes, 56 sous-étapes et 224 actions atomiques **proposées, non réalisées**. Ne pas inventer de compatibilité Cubism/VTS ; ne pas fusionner automatiquement et ne pas toucher au code de PR #1/PR #6 ou aux assets sous licence.
+
+---
+
 # Instructions de travail : VTube Physics Lab
 
 ## But réel
