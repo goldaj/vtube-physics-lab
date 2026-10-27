@@ -26,3 +26,12 @@
 
 ## 2026-10-26 — Fin de session et coordination Codex
 **Assistant (résumé non verbatim)** : consolide le dépôt sous une PR en brouillon, conserve le contexte de l'idée Remote Lab enrichie, ajoute service worker et manifeste, crée des issues de QA / recherche vêtements / Cubism-VTS / mobilité-audio. L'incubateur [PR #4](https://github.com/goldaj/projects-incubator/pull/4) a été fusionnée ; la fiche VTube Physics côté Jeux était déjà absente sur main. Un point d'entrée `docs/CODEX_ACTIVE_WORK.md` a été ajouté sur develop. Aucun test visuel navigateur ni compatibilité réelle Live2D n'ont été revendiqués.
+
+## 2026-10-27 — Demande de nouvelle contribution pré-Codex, sans filtrer les dépôts avec PR
+
+**Utilisateur (extrait verbatim de la conversation courante, heure du message non attestée)** :
+> Je vois pas pourquoi tu cherches des repos sans PR. Tu peux tout à fait avoir des PR dessus.
+> [...] Tu vas faire tes propres PR comme on l'a fait sur toutes les autres discussions du projet [...]
+> [...] tu vas prendre le sujet sur lequel tu as le plus de pertinence du moment que tu n'interviens pas sur les branches sur lesquelles Codex intervient pour le bot Hyperliquid. Tout le reste est ok en fait, si t'es pertinent vas-y, qu'il y ait une PR dessus ou pas.
+
+**Assistant (résumé non verbatim)** : a choisi ce dépôt pour une contribution complémentaire scientifiquement mesurable et autonome. Branche dédiée `research/gpt6-garment-quality-20261027`, [PR #6](https://github.com/goldaj/vtube-physics-lab/pull/6) **brouillon stacké sur PR #1**, sans merge. Deux modules de métriques et benchmark synthétiques, CLI JSON, 13 tests nouveaux prévus, protocole `docs/GARMENT_QUALITY_BENCHMARK.md`. Les preuves finales doivent provenir des statuts CI de la branche ; les seuls **10 tests indépendants de géométrie** ont été exécutés localement et réussis pendant cette session avant publication. Aucun moteur Live2D/Cubism, modèle utilisateur, compte VTS, tenue réelle ou mesure de qualité perceptuelle n'a été exécuté. Des essais manuels et une évaluation humaine distincte restent nécessaires. Ce texte est une trace de la présente contribution, pas une reconstruction de l'historique privé du projet.
