@@ -31,7 +31,7 @@ Le système doit permettre, après les premières catégories de vêtements usue
 | H-PHYS-01 | Simulation temps réel en 2D/2.5D, sans prétention à un patron 3D ni à un fit physique textile exact. | Problème inverse de 2D ambigu et potentiellement sous-déterminé. |
 | H-SCOPE-01 | La première livraison peut se limiter aux silhouettes simples, mais l'API, le dataset et la métrologie doivent intégrer des vêtements encore inconnus. | L'ensemble supporté grandit par mesure, pas en modifiant l'objectif final. |
 
-## 3. À distinguer absolument : trois niveaux de réussite
+## 3. À distinguer absolument : quatre niveaux de validation (L0 à L3)
 
 - **L0 : mannequin du laboratoire.** Silhouette canonique ou paramétrique + replay synthétique. Fournit preuve de géométrie, réinitialisation, déterminisme ; aucune preuve de compatibilité VTS.
 - **L1 : modèle réel Live2D dont les droits sont établis.** Modèle animé localement avec SDK légalement obtenu ou export autorisé ; vêtements dynamiques externes correctement alignés sur ses paramètres/poses, masques et profondeur cohérents. Pas forcément encore affiché *dans* l'application VTube Studio.
