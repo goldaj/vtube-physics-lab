@@ -59,3 +59,15 @@ Une comparaison loyale doit garder **même modèle, même replay, maillage/réso
 4. Enregistrer dans la roadmap la relation P3-Q1 à Q4, décider quelles métriques sont réellement utiles, choisir un seul jeu de seuils **avant** d'évaluer des variantes.
 5. Fusionner seulement après revue : cette PR dépend du code de la PR #1, et ne doit pas être fusionnée sur `develop` isolément si sa base de modules `src/garment.mjs`, `src/physics.mjs`, `src/replay.mjs` n'y est pas encore présente.
 6. Garder cet instrument distinct de la recherche Live2D réelle, des promesses de clothing autorig et des décisions de licence.
+
+
+## Validation technique de cette branche, 27 octobre 2026
+
+**HEAD validé avant cet addendum :** `cda357692005ffec35f8b9d4737363ac1bd7010c`.
+
+- Les 8 tests originaux de la PR #1 et **13 nouveaux tests** du projet de métriques ont été exécutés ensemble sous **Node.js 22** : **21 réussis, 0 échec**.
+- `npm run check`, `npm test` et l'export JSON validé par `node tools/run-garment-quality.mjs` ont tous passé sur deux exécutions : [CI push 40569803592](https://github.com/goldaj/vtube-physics-lab/actions/runs/40569803592) et [CI PR 40569815948](https://github.com/goldaj/vtube-physics-lab/actions/runs/40569815948).
+- Première tentative de CI à `0a4af35` : 21/21 tests réussis, mais étape d'export échouée parce que `npm run` ajoute un préambule non JSON à stdout. Corrigé en appelant directement Node ; conserver cet échec historique.
+- L'absence d'inversion et les ratios des scènes réelles du mannequin de démonstration **n'ont pas été publiés comme métriques chiffrées de validation** : seul le pipeline déterministe et l'export JSON ont été validés. Aucune revue esthétique humaine, aucun véritable avatar ou vêtement tiers.
+
+L'addendum documentaire seul entraîne éventuellement un nouveau run CI sur un HEAD différent ; vérifier le dernier HEAD et ses statuts avant intégration.
