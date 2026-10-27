@@ -1,3 +1,9 @@
+## Nouvelle contribution scientifique GPT6 (27/10/2026) — PR #7, lecture prioritaire
+
+https://github.com/goldaj/vtube-physics-lab/pull/7 — research/gpt6-universal-auto-clothing-plan-20261027 → feat/replay-clothing-spike, brouillon documentaire, indépendant de la PR #6 métriques (https://github.com/goldaj/vtube-physics-lab/pull/6).
+
+**Intention actualisée du propriétaire :** adapter automatiquement des dessins de vêtements 2D à des avatars humanoïdes de plusieurs morphologies, avec compatibilité VTube Studio animée à démontrer. T-shirt/pull/pantalon/short/jupe/robe = premier sous-ensemble de validation, **pas de limite de catégorie à terme**. Programme R&D 14 étapes, 56 sous-étapes, 224 micro-actions en docs/auto-clothing/00 à 04, dont protocole tests et passation. Rien du plan n'est encore implémenté/validé comme habillage universel. L'ordre de traitement des PR #1/#6/#7 reste à définir par Codex, sans merge automatique. L'historique ci-dessous reste utile.
+
 # Codex : reprise de l'expérience VTube Physics Lab
 
 Dernière mise à jour : 2026-10-26. Ce fichier sur `develop` permet de retrouver la branche active sans supposer que le code est fusionné.
