@@ -1,3 +1,9 @@
+# Contribution expérimentale GPT6 du 27/10/2026, uniquement sur cette branche
+
+La PR [#6](https://github.com/goldaj/vtube-physics-lab/pull/6), branche `research/gpt6-garment-quality-20261027`, **dépend de la PR #1** (`feat/replay-clothing-spike`), cible directement cette dernière et ne demande aucun merge automatique. Elle ajoute une instrumentation quantitative **sans modifier les algorithmes de physique/maillage de la PR #1**. Avant reprise Codex, lire `docs/GARMENT_QUALITY_BENCHMARK.md`, les tests `tests/garment-quality.test.mjs` et `tests/garment-benchmark.test.mjs`, puis la PR #6 et ses statuts CI. Les métriques ne valident ni un vrai vêtement sans rig ni une intégration Cubism. Ne pas confondre seuil expérimental et résultat objectif d'acceptation humaine. Pas d'asset tiers, de connexion VTS ni de déploiement.
+
+---
+
 # Instructions de travail : VTube Physics Lab
 
 ## But réel
