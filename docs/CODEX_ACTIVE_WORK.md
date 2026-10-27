@@ -1,3 +1,7 @@
+## Contribution stackée, postérieure au travail principal (27/10/2026)
+
+Une **PR complémentaire #6**, `research/gpt6-garment-quality-20261027` → `feat/replay-clothing-spike`, apporte un banc de mesure falsifiable des vêtements du mannequin de la PR #1. **Ce n'est pas la branche active de Codex**, et elle n'est pas fusionnée. Lire `docs/GARMENT_QUALITY_BENCHMARK.md` (sur la PR #6), puis `tests/garment-quality.test.mjs` et `tests/garment-benchmark.test.mjs`. Ne pas intégrer seule à `develop` sans les trois modules fondateurs de la PR #1. Les règles ci-dessous sur la PR #1 restent applicables ; le texte de 2026-10-26 demeure historique.
+
 # Codex : reprise de l'expérience VTube Physics Lab
 
 Dernière mise à jour : 2026-10-26. Ce fichier sur `develop` permet de retrouver la branche active sans supposer que le code est fusionné.
