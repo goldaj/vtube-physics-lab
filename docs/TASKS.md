@@ -1,3 +1,9 @@
+## Nouveau programme cible auto-clothing générique (PR #7, 27/10/2026)
+
+**Objectif non borné par les six premières catégories** : modèle humanoïde 2D animé, morphologies variées, vêtement importé sans rig individuel, niveaux L0 mannequin → L1 vrai Live2D → L2 VTS fonctionnel → L3 généralisations sur types de vêtements inconnus. Les catégories exemple T-shirt, pull, pantalon, short, jupe, robe servent seulement à qualifier les premiers jalons.
+
+**Source détaillée actuelle :** docs/auto-clothing/00-PRODUCT-CONTRACT.md ; 01-BACKLOG-E0-E6.md ; 02-BACKLOG-E7-E13.md ; 03-EXPERIMENT-DESIGN.md ; 04-CODEX-HANDOFF.md. **E0–E13** = 14 étapes de recherche, 56 sous-étapes, 224 actions atomiques. Toutes au stade « À faire/proposé » dans cette contribution de documentation. Les anciennes entrées P0–P8 ci-dessous restent historiquement pertinentes mais ne suffisent plus comme décomposition exhaustive de la nouvelle cible. Ne pas effacer les décisions ou code de PR #1/PR #6.
+
 # Roadmap — 2026-10-26
 
 | ID | Livrable | État |
