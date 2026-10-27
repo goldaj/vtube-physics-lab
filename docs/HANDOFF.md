@@ -1,3 +1,11 @@
+## Nouveau handoff R&D indépendant — PR #7 (27/10/2026)
+
+Le propriétaire confirme que la finalité n'est **pas six types de vêtements** mais un **solveur 2D générique et extensible** qui habille de multiples corpulences de mannequins humanoïdes puis de vrais modèles animés VTube Studio, sans rig manuel pour chaque tenue. Aucun corpus ou solveur de cette ambition n'a été réalisé dans la présente contribution : elle est **documentaire uniquement**.
+
+PR https://github.com/goldaj/vtube-physics-lab/pull/7, branche research/gpt6-universal-auto-clothing-plan-20261027, base feat/replay-clothing-spike. Lire docs/auto-clothing/00-PRODUCT-CONTRACT.md et 04-CODEX-HANDOFF.md, puis les backlogs et la matrice d'expérience (14 étapes, 56 sous-étapes, 224 actions). La PR #6 quantifie la géométrie synthétique, **elle ne prouve pas la compatibilité VTS**, et ne doit pas être dupliquée. Réévaluer tôt la disponibilité réelle des vertices/landmarks dans Cubism/VTS avant de promettre une injection vestimentaire native.
+
+---
+
 # Passation Codex (2026-10-26)
 
 ## Situation
