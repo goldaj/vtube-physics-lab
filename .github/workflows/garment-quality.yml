@@ -1,0 +1,29 @@
+name: Garment quality research checks
+on:
+  push:
+    branches: ["research/gpt6-garment-quality-20261027"]
+  pull_request:
+    branches: ["feat/replay-clothing-spike"]
+permissions:
+  contents: read
+concurrency:
+  group: garment-quality-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  synthetic-quality:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Module syntax
+        run: npm run check
+      - name: Synthetic and original Node tests
+        run: npm test
+      - name: Read-only deterministic report
+        run: |
+          npm run bench:garment > "$RUNNER_TEMP/garment-quality.json"
+          node --input-type=module -e 'import {readFileSync} from "node:fs"; const r=JSON.parse(readFileSync(process.argv[1],"utf8")); if(r.schema!=="vtube-garment-quality-synthetic-v1" || r.metrics.sampleCount<2 || r.metrics.provenance!=="synthetic_geometry_diagnostics_not_live2d_validation") process.exit(1)' "$RUNNER_TEMP/garment-quality.json"
+      # No camera, model asset, personal data, VTS, vendor SDK or external account.
