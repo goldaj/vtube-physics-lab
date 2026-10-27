@@ -1,3 +1,7 @@
+## Addendum GPT6 du 27/10/2026 : mesure des défauts de vêtements, en branche distincte
+
+[PR #6](https://github.com/goldaj/vtube-physics-lab/pull/6) `research/gpt6-garment-quality-20261027` → `feat/replay-clothing-spike`. Pure instrumentation de géométrie/replay, **aucun changement de rendu/physique PR #1, aucun véritable modèle Live2D testé**. Le document de reprise technique et protocole est `docs/GARMENT_QUALITY_BENCHMARK.md` sur la PR #6. Les commandes prévues sont `npm run check && npm test && npm run bench:garment` ; ne revendiquer que les validations effectivement réussies. Avant une fusion, vérifier CI et tests visuels, et intégrer d'abord ou conjointement les modules de la PR #1. Ne pas mesurer le « succès auto-rig » avec les seules métriques synthétiques. Le contexte initial ci-dessous est conservé.
+
 # Passation Codex (2026-10-26)
 
 ## Situation
