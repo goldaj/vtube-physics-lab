@@ -1,3 +1,11 @@
+## Complément de portée daté du 27/10/2026 : sans limite de familles
+
+Le propriétaire a clarifié l'objectif : **vêtements 2D arbitraires à terme** sur avatars humanoïdes de morphologies variées, mouvement réellement adapté à VTube Studio, sans rigging manuel propre à chaque vêtement. Les six premières catégories (robe, T-shirt, pull, pantalon, short, jupe) ne constituent **qu'une phase de validation**. Une implémentation avec six solveurs indépendants est **contraire** à l'objectif.
+
+Le plan de référence exhaustif et opérationnel est dans docs/auto-clothing/00-PRODUCT-CONTRACT.md puis 01-BACKLOG-E0-E6.md / 02-BACKLOG-E7-E13.md ; protocole dans 03-EXPERIMENT-DESIGN.md, handoff dans 04-CODEX-HANDOFF.md. Cette contribution PR #7 est documentaire, sans preuve de capacité sur nouveau vêtement, sans compatibilité réelle VTS. Les hypothèses historiques et limites ci-dessous restent à connaître, mais le cadrage « commencer par T-shirt frontal » ne borne plus le produit final.
+
+---
+
 # Programme de recherche : vêtement 2D interchangeable **sans rig manuel**
 
 **Nouvelle exigence utilisateur, 2026-10-26.** La question « l'avait-on dit dans les conversations plus anciennes ? » n'a pas trouvé de formulation explicite dans les souvenirs/relevés accessibles. Ne pas inventer d'antériorité.
