@@ -1,8 +1,17 @@
+> **État consolidé 29/10/2026 :** les travaux de la PR #6 (mesures de qualité) sont désormais dans la branche de la PR #7 avec le prototype #1. Les mentions « séparé » ci-dessous sont historiques ; la PR #7 est l'unique entrée de reprise pour Codex.
+
 ## Nouvelle contribution scientifique GPT6 (27/10/2026) — PR #7, lecture prioritaire
 
 https://github.com/goldaj/vtube-physics-lab/pull/7 — research/gpt6-universal-auto-clothing-plan-20261027 → feat/replay-clothing-spike, brouillon documentaire, indépendant de la PR #6 métriques (https://github.com/goldaj/vtube-physics-lab/pull/6).
 
 **Intention actualisée du propriétaire :** adapter automatiquement des dessins de vêtements 2D à des avatars humanoïdes de plusieurs morphologies, avec compatibilité VTube Studio animée à démontrer. T-shirt/pull/pantalon/short/jupe/robe = premier sous-ensemble de validation, **pas de limite de catégorie à terme**. Programme R&D 14 étapes, 56 sous-étapes, 224 micro-actions en docs/auto-clothing/00 à 04, dont protocole tests et passation. Rien du plan n'est encore implémenté/validé comme habillage universel. L'ordre de traitement des PR #1/#6/#7 reste à définir par Codex, sans merge automatique. L'historique ci-dessous reste utile.
+
+
+---
+
+## Contribution stackée, postérieure au travail principal (27/10/2026)
+
+Une **PR complémentaire #6**, `research/gpt6-garment-quality-20261027` → `feat/replay-clothing-spike`, apporte un banc de mesure falsifiable des vêtements du mannequin de la PR #1. **Ce n'est pas la branche active de Codex**, et elle n'est pas fusionnée. Lire `docs/GARMENT_QUALITY_BENCHMARK.md` (sur la PR #6), puis `tests/garment-quality.test.mjs` et `tests/garment-benchmark.test.mjs`. Ne pas intégrer seule à `develop` sans les trois modules fondateurs de la PR #1. Les règles ci-dessous sur la PR #1 restent applicables ; le texte de 2026-10-26 demeure historique.
 
 # Codex : reprise de l'expérience VTube Physics Lab
 
