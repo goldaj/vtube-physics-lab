@@ -19,3 +19,7 @@ Branche par défaut : `main`. PR ouvertes : aucune.
 - Comparer SHA, ascendance et diff de chaque branche à sa cible, préserver assets et production.
 
 **Statut :** inventaire réalisé ; tests et qualification approfondie à faire.
+
+## Vérification supplémentaire du graphe Git
+
+- **Comparaison actualisée :** `main...develop` diverge : 38 commits propres à develop, 7 commits propres à main, 38 fichiers modifiés dans le diff. Fusion automatique déconseillée ; revoir les 7 commits de main et la physique avant rapprochement.
