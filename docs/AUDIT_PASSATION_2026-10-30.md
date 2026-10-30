@@ -24,3 +24,9 @@ GitHub : 5 branches, 3 PR et racine examinées. **Aucun rig Cubism/Live2D ouvert
 4. Préserver sources Cubism, meshes, textures, expressions et rigging. Vérifier la licence et les capacités VTube Studio avant toute automatisation par agent.
 5. Revisiter la roadmap E0–E13/224 actions : sélectionner un jalon réellement exécuté et démontrable, documenter entrées/sorties et métriques.
 6. Le statut Git divergent **n'autorise ni suppression ni merge automatique**, même si des PR sont clôturées. Aucun test physique effectué pendant l'audit.
+
+
+## Observation CI GitHub (30 octobre 2026)
+- [Replay and clothing spike](https://github.com/goldaj/vtube-physics-lab/actions/runs/40919783943) : **success** sur `develop` avant l'audit. Aucune exécution sur la branche par défaut `main` observée dans les trois derniers runs.
+
+Les contrôles ci-dessus ne démontrent ni la validité fonctionnelle en environnement réel ni la publication d'une release. Ne pas substituer ce statut aux tests manuels et matériels prévus dans la passation.
